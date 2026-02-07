@@ -93,15 +93,13 @@ void bubbleSort(int a[], int n)
             }
             sorted = 1;
           }
-       
+        
+        
       }
     }
-    if (sorted == 1) break;
+    if (sorted==1)break;
     cout<<endl;
     display(a, n);
-    display(a,n);
-
-    
     
 
   }
