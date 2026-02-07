@@ -26,7 +26,7 @@ int main(int argc, char **argv)
     {
       bubbleSort(a, N);
     }
-    else if (strcmp(argv[1], "insert") == 0 )
+    else if (strcmp(argv[1], "insertion") == 0 )
     {
       insertion(a, N);
     }
@@ -34,7 +34,6 @@ int main(int argc, char **argv)
     {
       selectionSort(a, N);
     }
-    cout<<"Result"<<endl;
     display(a, N);
   }
   delete[] a;
