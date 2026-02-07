@@ -1,6 +1,6 @@
 #ifndef SORTING_H
 #define SORTING_H
-
+using namespace std;
 #include <iomanip>
 /* function prototype*/
 
@@ -11,9 +11,9 @@ void display(int a[], int n)
 
   for (i = 0; i < n; i++)
   {
-    std::cout << setw(5) << a[i];
+    cout << setw(5) << a[i];
   }
-  std::cout << std::endl<<std::endl;
+  cout << endl;
 }
 
 // slect
@@ -26,13 +26,15 @@ void selectionSort(int a[], int n)
     mi = i ;
     for (j = i+1; j < n ; j++)
     {
-      if (a[j]<a[mi])
+      if (a[j]>a[mi])
       {
         mi = j;
       }
     }
+    
     swap(a[i],a[mi]);
     display(a, n);
+    cout<<endl;
   }
   
 }
@@ -46,13 +48,18 @@ void insertion(int a[], int n)
   {
     int obj = a[i];
     int j = i - 1;
-    while ( j>= 0 && a[j] > obj)
+
+    while ( j>= 0 && a[j] < obj)
     {
       a[j + 1] = a[j];
       j--;
+      display(a, n);
+      
     }
     a[j + 1] = obj;
     display(a, n);
+    cout<<endl;
+
   }
 }
 
@@ -76,12 +83,13 @@ void bubbleSort(int a[], int n)
   {
     for (i=0;i<n-j-1;i++)
     {
-      if (a[i]>a[i+1])
+      if (a[i]<a[i+1])
       {
         swap(a[i],a[i+1]);
+        display(a, n);
       }
     }
-    display(a, n);
+    cout<<endl;
   }
 }
 #endif
