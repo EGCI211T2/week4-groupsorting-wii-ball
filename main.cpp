@@ -23,7 +23,6 @@ int main(int argc, char **argv)
     if (strcmp(argv[1], "bubble") == 0)
     {
       bubbleSort(a, N);
-      display(a, N);
     }
     else if (strcmp(argv[1], "insertion") == 0 )
     {
