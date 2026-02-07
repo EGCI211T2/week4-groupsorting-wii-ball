@@ -71,9 +71,9 @@ void bubbleSort(int a[], int n)
   int i, j;
   int sorted;
   // how may pair to compare?   
-  for (j = 0 ; j < n; j++)
+  for (j = 0 ; j < n-1; j++)
   {
-    for (i=0;i<n-j;i++)
+    for (i=0;i<n-j-1;i++)
     {
       if (a[i]>a[i+1])
       {
