@@ -11,7 +11,7 @@ void display(int a[], int n)
 
   for (i = 0; i < n; i++)
   {
-    cout << setw(3) << a[i];
+    cout << setw(4) << a[i];
   }
   cout << endl;
 }
@@ -48,7 +48,6 @@ void insertion(int a[], int n)
     while ( j>= 0 && a[j] > obj)
     {
       a[j + 1] = a[j];
-      display(a, n);
       j--;
     }
     a[j + 1] = obj;

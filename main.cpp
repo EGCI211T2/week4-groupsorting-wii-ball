@@ -19,21 +19,22 @@ int main(int argc, char **argv)
 
   if (argc > 1)
   {
-    if (strcmp(argv[1],"bubble"))
+    if (strcmp(argv[1], "bubble") == 0)
     {
       bubbleSort(a, N);
       display(a, N);
     }
-    else if (strcmp(argv[1] , "insert"))
+    else if (strcmp(argv[1], "insert") == 0 )
     {
       insertion(a, N);
       display(a, N);
     }
-    else if (strcmp(argv[1] , "selection"))
+    else if (strcmp(argv[1], "selection") == 0)
     {
       selectionSort(a, N);
       display(a, N);
     }
+    cout<<"Result"<<endl;
     display(a, N);
   }
   delete[] a;
