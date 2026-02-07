@@ -1,6 +1,6 @@
 #ifndef SORTING_H
 #define SORTING_H
-using namespace std;
+
 #include <iomanip>
 /* function prototype*/
 
@@ -11,9 +11,9 @@ void display(int a[], int n)
 
   for (i = 0; i < n; i++)
   {
-    cout << setw(4) << a[i];
+    std::cout << setw(4) << a[i];
   }
-  cout << endl;
+  std::cout << std::endl;
 }
 
 // slect
