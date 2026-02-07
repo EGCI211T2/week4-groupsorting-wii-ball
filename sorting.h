@@ -88,6 +88,7 @@ void bubbleSort(int a[], int n)
         swap(a[i],a[i+1]);
         display(a, n);
       }
+      
     }
     cout<<endl;
   }
