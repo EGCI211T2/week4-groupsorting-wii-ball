@@ -13,7 +13,7 @@ void display(int a[], int n)
   {
     std::cout << setw(5) << a[i];
   }
-  std::cout << std::endl;
+  std::cout << std::endl<<std::endl;
 }
 
 // slect
