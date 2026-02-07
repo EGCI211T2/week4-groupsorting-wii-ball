@@ -11,7 +11,7 @@ void display(int a[], int n)
 
   for (i = 0; i < n; i++)
   {
-    std::cout << setw(4) << a[i];
+    std::cout << setw(3) << a[i];
   }
   std::cout << std::endl;
 }
