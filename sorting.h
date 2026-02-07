@@ -1,4 +1,4 @@
-#ifndefine SORTING_H
+#ifndef SORTING_H
 #define SORTING_H
 using namespace std;
 #include <iomanip>
@@ -10,8 +10,9 @@ void display(int a[], int n)
   int i;
 
   for (i = 0; i < n; i++)
+  {
     cout << setw(3) << a[i];
-
+  }
   cout << endl;
 }
 
@@ -44,12 +45,14 @@ void insertion(int a[], int n)
   {
     int obj = a[i];
     int j = i - 1;
-    while (a[j] > obj)
+    while ( j>= 0 && a[j] > obj)
     {
       a[j + 1] = a[j];
+      display(a, n);
       j--;
     }
     a[j + 1] = obj;
+    display(a, n);
   }
 }
 

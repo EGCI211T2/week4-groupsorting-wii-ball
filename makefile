@@ -1,9 +1,6 @@
-
 compile: main.cpp
-	 gcc  main.c -o sort
+	 g++  main.cpp -o sort
 
 run: sort
-	 ./sort
+	 ./sort insert 1 5 6 8 4 2
 
-clean: sort
-	 rm sort
