@@ -77,7 +77,7 @@ void bubbleSort(int a[], int n)
   // how may pair to compare?   
   for (j = 0 ; j < n-1; j++)
   {
-
+    display(a, n);
     for (i=0;i<n-j-1;i++)
     {
       if (a[i]<a[i+1])
@@ -100,8 +100,6 @@ void bubbleSort(int a[], int n)
     if (sorted==1)break;
     cout<<endl;
     display(a, n);
-    
-
   }
 }
 #endif
