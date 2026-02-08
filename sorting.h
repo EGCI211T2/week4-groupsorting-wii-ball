@@ -82,7 +82,6 @@ void bubbleSort(int a[], int n)
       if (a[i]<a[i+1])
       {
         swap(a[i],a[i+1]);
-        display(a, n);
         for (int c = 0; c < n - 1; c++)
           {
             if (a[c] < a[c + 1])
@@ -92,13 +91,11 @@ void bubbleSort(int a[], int n)
             }
             sorted = 1;
           }
-        
-        
       }
+      display(a, n);
     }
     if (sorted==1)break;
     cout<<endl;
-    display(a, n);
   }
 }
 #endif
